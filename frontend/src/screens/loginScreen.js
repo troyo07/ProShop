@@ -26,7 +26,7 @@ const LoginScreen = ({ location, history }) => {
     }
   }, [history, userInfo, redirect])
 
-console.log(userLogin)
+
   const submitHandler = (e) => {
     e.preventDefault()
 dispatch(login(email, password))
@@ -51,8 +51,9 @@ dispatch(login(email, password))
         <Form.Group controlId="password">
           <Form.Label>Password</Form.Label>
           <Form.Control
+            
             controlId="password"
-            placeholder="Enter Email"
+            placeholder="Enter Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           ></Form.Control>
@@ -63,7 +64,11 @@ dispatch(login(email, password))
       </Form>
       <Row className="py-3">
         <Col>
-        New Customer ? <Link to={redirect ? `/register?redirect=${redirect}` : "/register"}> Register</Link>
+          New Customer ?{" "}
+          <Link to={redirect ? `/register?redirect=${redirect}` : "/register"}>
+            {" "}
+            Register
+          </Link>
         </Col>
       </Row>
     </FormContainer>

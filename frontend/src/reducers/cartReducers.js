@@ -17,7 +17,7 @@ export const cartReducer = (state = { cartItems: [] }, action) => {
       } else {
         return {
           ...state,
-          cartItemes: [...state.cartItems, item],
+          cartItems: [...state.cartItems, item],
         };
       }
 

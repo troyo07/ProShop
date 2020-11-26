@@ -42,7 +42,7 @@ dispatch(login(email, password))
         <Form.Group controlId="email">
           <Form.Label>Email Address</Form.Label>
           <Form.Control
-            controlId="email"
+            type="email"
             placeholder="Enter Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -52,7 +52,7 @@ dispatch(login(email, password))
           <Form.Label>Password</Form.Label>
           <Form.Control
             
-            controlId="password"
+            type="password"
             placeholder="Enter Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}

@@ -7,7 +7,7 @@ import User from "../models/userModel.js";
 // @access Public
 
 const authUser = asyncHandler(async (req, res) => {
-  const { name, email, password } = req.body
+  const { email, password } = req.body
   
   const user = await User.findOne({ email })
 

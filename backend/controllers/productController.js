@@ -11,7 +11,7 @@ const products = await Product.find({});
 res.json(products);
 });
 
-// @ description  Fetch sing product
+// @ description  Fetch single product
 // @route GET /api/products/:id
 // @access Public
 

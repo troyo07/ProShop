@@ -79,7 +79,7 @@ const updateOrderToPaid = asyncHandler(async (req, res) => {
       // Add other payment info from other gateways?
     }
 
-    const updateOrder = await order.save()
+    const updatedOrder = await order.save()
 
     res.json(updatedOrder);
 

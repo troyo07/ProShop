@@ -77,7 +77,7 @@ const ProfileScreen = ({ location, history }) => {
               onChange={(e) => setName(e.target.value)}
             ></Form.Control>
           </Form.Group>
-          <Form.Group controlId="name">
+          <Form.Group controlId="email">
             <Form.Label>Email Address</Form.Label>
             <Form.Control
               type="email"

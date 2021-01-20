@@ -4,7 +4,7 @@ import { Table, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
-import { listOrders, deleteOrder } from "../actions/orderActions";
+import { listOrders } from "../actions/orderActions";
 
 const OrderListScreen = ({ history }) => {
   const dispatch = useDispatch();
@@ -25,7 +25,7 @@ const orderList = useSelector((state) => state.orderList);
     } else {
       history.push("/login");
     }
-  }, [dispatch, history, listOrders, userInfo]);
+  }, [dispatch, history, userInfo]);
 
   // const deleteHandler = (id) => {
   //   if (window.confirm("Are you sure")) {
